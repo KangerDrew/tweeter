@@ -1,6 +1,6 @@
 form.tweet-input textarea{
   border: none;
-  height:35px;
+  height:70px;
   width:100%;
   background-color: #f4f1ec;
   border-bottom:solid 5px #545149;
@@ -25,3 +25,6 @@ div.below-input button {
   border: none;
 }
 
+.counter-overflow {
+  color:red;
+}
