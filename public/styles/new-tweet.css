@@ -1,0 +1,27 @@
+form.tweet-input textarea{
+  border: none;
+  height:35px;
+  width:100%;
+  background-color: #f4f1ec;
+  border-bottom:solid 5px #545149;
+  margin-bottom:5px;
+  resize:none;
+}
+
+div.below-input {
+  display:flex;
+  justify-content:center;
+  justify-content: space-between;
+  font-family: 'Bungee', cursive;
+}
+
+div.below-input output {
+  font-family: 'Bungee', cursive;
+}
+
+div.below-input button {
+  background-color: #4056A1;
+  color:#FFFFFF;
+  border: none;
+}
+

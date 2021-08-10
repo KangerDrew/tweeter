@@ -22,8 +22,8 @@ body {
 }
 
 main {
-  width:90vw;
-  justify-content:center;
+  width:90%;
+  margin: auto;
 }
 
 /*

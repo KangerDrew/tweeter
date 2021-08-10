@@ -5,6 +5,7 @@ header {
   justify-content:center;
   flex-direction:column;
   align-items:center;
+  color:#FFFFFF;
   background-color:teal;
   background-image:url('../images/asfalt-light.png')
 }
