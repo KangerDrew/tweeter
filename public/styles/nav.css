@@ -6,8 +6,9 @@ nav {
   display:flex;
   justify-content: space-between;
   align-items:center;
-  padding-right:1.5em;
-  padding-left:1.5em;
+  padding:0px 1.5em;
+  position: fixed;
+  top: 0;
 
 }
 
@@ -15,7 +16,6 @@ nav span {
   display:block;
   font-family: 'Bungee', cursive;
 }
-
 
 
 .nt-button {
