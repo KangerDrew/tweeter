@@ -9,7 +9,7 @@ nav {
   padding:0px 1.5em;
   position: fixed;
   top: 0;
-
+  z-index: 2000;
 }
 
 nav span {
