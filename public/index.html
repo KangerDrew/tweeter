@@ -19,6 +19,7 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -56,70 +57,9 @@
         </form>
       </section> 
       <!-- Area for the tweets go below here -->
-      <article class="stored-tweet">
-        <div class="tweet-head">
-          <table style="position:relative; right:20px;">
-            <tr>
-              <td>
-                <img height="80px" width="80px" src="/images/keanu.png"> 
-              </td>
-              <td>
-                <h5>John Wick</h5>
-              </td>
-            </tr>
-          </table>
-           <span>@doggo-lover</span>
-        </div>
-        <p class="tweet-content">Selling pencils. Barely used. DM for more info.</p>
-        <div class="tweet-foot">
-          <h6>Date</h6>
-          <div class="tweet-foot-buttons">
-            <span>
-              <i class="fas fa-flag"></i>
-            </span>
-            <span>
-              <i class="fas fa-retweet"></i> 
-            </span>
-            <span>
-              <i class="fas fa-heart"></i>
-            </span>
-          </div>
-        </div>
-      </article>
-
-      <article class="stored-tweet">
-        <div class="tweet-head">
-          <table style="position:relative; right:20px;">
-            <tr>
-              <td>
-                <img height="80px" width="80px" src="/images/nic-cage.png"> 
-              </td>
-              <td>
-                <h5>Nicholas Cage</h5>
-              </td>
-            </tr>
-          </table>
-           <span>@notTheBees</span>
-        </div>
-        <p class="tweet-content">ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-        <div class="tweet-foot">
-          <h6>Date</h6>
-          <div class="tweet-foot-buttons">
-            <span>
-              <i class="fas fa-flag"></i>
-            </span>
-            <span>
-              <i class="fas fa-retweet"></i> 
-            </span>
-            <span>
-              <i class="fas fa-heart"></i>
-            </span>
-          </div>
-        </div>
-      </article>
-
-
-
+      <div id="tweet-container">
+        <!-- This would be where the new tweets will be appended dynamically -->
+      </div>
     </main>
 
   </body>
