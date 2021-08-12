@@ -12,9 +12,8 @@ $(document).ready(function() {
     }
   });
 
-
   $moveUpButton.on('click', function(event) {
-    
+
     $(window).scrollTop(0)
 
   });
