@@ -6,12 +6,20 @@
 
 $(document).ready(function() {
 
+  // The escape function was implemented to prevent people
+  // injecting unwanted code to the main page! This will
+  // need to be used for the incoming text input from the 
+  // user.
+
   const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
   
+
+
+  // This function creates an HTML element for the custom tweet.
 
   const createTweetElement = function(userData) {
 
@@ -51,6 +59,10 @@ $(document).ready(function() {
     return $returnTweet;
   };
 
+  
+  // The below function uses createTweetElement to
+  // render all the existing tweets in the database!
+
   const renderTweets = function(tweets) {
     // empty out any existing tweets from
     // the container!
@@ -66,7 +78,8 @@ $(document).ready(function() {
     }
   };
 
-
+  // Below is an AJAX get request to load the
+  // tweets into the page from the database!
   const loadTweets = () => {
     $.ajax({
       url: '/tweets',
@@ -80,14 +93,28 @@ $(document).ready(function() {
     });
   };
 
+  // When the page loads for the first time, it will
+  // populate it with some sample tweets that already
+  // exists in the database!
   loadTweets();
   
-
+  // Below are some standard procedure for what happens when
+  // a new tweet is submitted.
   $("#tweet-submission").on("submit", function(event) {
+
+    // Command below prevents default HTML response from triggering
     event.preventDefault();
 
     const $tweetInput = $('#tweet-text');
+    // Below gives us the number of character that was input in
+    // the textbox by the user!
     const textLength = $tweetInput.val().length;
+
+    
+    // The two constants below refer to the warning signs that
+    // are currently hidden by css. If the right conditions are
+    // met, they will reveal themselves by the jQuery logic written
+    // below it!
 
     const warningDisplayLimit = $('#limit-warning');
     const warningDisplayZero = $('#zero-word');

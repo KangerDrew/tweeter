@@ -2,7 +2,6 @@ main.container h2{
   margin-top:15px;
 }
 
-
 form.tweet-input textarea{
   border: none;
   height:70px;
@@ -35,6 +34,8 @@ div.below-input button {
   border: none;
   transition:0.5s;
 }
+
+/* Button changes color when hovered over */
 
 div.below-input button:hover {
   padding: 1px 7px;

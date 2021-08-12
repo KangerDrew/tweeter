@@ -1,3 +1,6 @@
+/* The css below will only apply if the window excees the
+size of 1024x600px display! */
+
 @media (min-width: 1024px) and (min-height: 600px) {
 
   main.container {

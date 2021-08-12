@@ -23,6 +23,8 @@ main.container div.scroll-up-button{
   animation-iteration-count: infinite;
 }
 
+/* Button is spinning! */
+
 @keyframes spinny{
   0% {
     transform: rotate(0deg);
@@ -37,6 +39,9 @@ main.container div.scroll-up-button{
     transform: rotate(360deg);
   }
 }
+
+/* Code below hides the button away,
+until a user scrolls down by 250 px */
 
 main.container div.scroll-up-button.hide-button{
   display:none;

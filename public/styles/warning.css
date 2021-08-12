@@ -4,6 +4,7 @@
   display:flex;
 }
 
+
 #limit-warning {
   color:darkred;
   display:none;
@@ -18,8 +19,3 @@
   border:solid 5px darkred;
 }
 
-
-/* .reveal-warning {
-  visibility:visible;
-  display:flex;
-} */
