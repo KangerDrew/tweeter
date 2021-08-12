@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweet-container.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/warning.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -43,6 +44,17 @@
           <h2>Dis U</h2>
       </div>
     </header>
+    <!-- The element below will only display if the character input exceeds 140 -->
+    <div class="flex-center">
+      <div id="limit-warning">
+        <i class="fas fa-radiation-alt"></i><a> You have exceeded the character limit! </a><i class="fas fa-radiation-alt"></i>
+      </div>
+    </div>
+    <div class="flex-center">
+      <div id="zero-word">
+        <i class="fas fa-radiation-alt"></i><a> Please input something into the textbox! </a><i class="fas fa-radiation-alt"></i>
+      </div>
+    </div>
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet" method="POST" action='/tweets'>

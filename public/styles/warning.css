@@ -1,0 +1,25 @@
+.flex-center {
+  justify-content: center;
+  align-items:center;
+  display:flex;
+}
+
+#limit-warning {
+  color:darkred;
+  display:none;
+  margin-top: 20px;
+  border:solid 5px darkred;
+}
+
+#zero-word {
+  color:darkred;
+  display:none;
+  margin-top: 20px;
+  border:solid 5px darkred;
+}
+
+
+/* .reveal-warning {
+  visibility:visible;
+  display:flex;
+} */

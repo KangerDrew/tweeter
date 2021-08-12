@@ -89,9 +89,24 @@ $(document).ready(function() {
     const $tweetInput = $('#tweet-text');
     const textLength = $tweetInput.val().length;
 
-    if (textLength > 140 || textLength < 0 || $tweetInput.val() === ''){
-      alert('Nope')
+    const warningDisplayLimit = $('#limit-warning');
+    const warningDisplayZero = $('#zero-word');
+
+    if (textLength > 140){
+      if (!warningDisplayLimit.is(':visible')){
+        warningDisplayLimit.slideToggle();
+      }
+    } else if($tweetInput.val() === '') {
+      if (!warningDisplayZero.is(':visible')){
+        warningDisplayZero.slideToggle();
+      }
     } else {
+      if (warningDisplayLimit.is(':visible')){
+        warningDisplayLimit.slideToggle();
+      }
+      if (warningDisplayZero.is(':visible')){
+        warningDisplayZero.slideToggle();
+      }
       const urlEncoded = $(this).serialize();
       $.post('/tweets',urlEncoded)
         .then(loadTweets);
