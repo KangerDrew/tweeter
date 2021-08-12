@@ -8,7 +8,7 @@ $(document).ready(function() {
 
   // The escape function was implemented to prevent people
   // injecting unwanted code to the main page! This will
-  // need to be used for the incoming text input from the 
+  // need to be used for the incoming text input from the
   // user.
 
   const escape = function (str) {
@@ -119,19 +119,19 @@ $(document).ready(function() {
     const warningDisplayLimit = $('#limit-warning');
     const warningDisplayZero = $('#zero-word');
 
-    if (textLength > 140){
-      if (!warningDisplayLimit.is(':visible')){
+    if (textLength > 140) {
+      if (!warningDisplayLimit.is(':visible')) {
         warningDisplayLimit.slideToggle();
       }
-    } else if($tweetInput.val() === '') {
-      if (!warningDisplayZero.is(':visible')){
+    } else if ($tweetInput.val() === '') {
+      if (!warningDisplayZero.is(':visible')) {
         warningDisplayZero.slideToggle();
       }
     } else {
-      if (warningDisplayLimit.is(':visible')){
+      if (warningDisplayLimit.is(':visible')) {
         warningDisplayLimit.slideToggle();
       }
-      if (warningDisplayZero.is(':visible')){
+      if (warningDisplayZero.is(':visible')) {
         warningDisplayZero.slideToggle();
       }
       const urlEncoded = $(this).serialize();

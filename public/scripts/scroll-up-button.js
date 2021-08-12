@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   const $moveUpButton = $('.scroll-up-button');
 
-  $(window).scroll(function (event) {
+  $(window).scroll(function(event) {
 
     const scroll = $(window).scrollTop();
 
@@ -21,7 +21,7 @@ $(document).ready(function() {
   
   $moveUpButton.on('click', function(event) {
 
-    $(window).scrollTop(0)
+    $(window).scrollTop(0);
 
   });
 

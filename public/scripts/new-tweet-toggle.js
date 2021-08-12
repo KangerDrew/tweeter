@@ -15,15 +15,15 @@ $(document).ready(function() {
 
   $toggleInput.on('click', function(event) {
 
-    $textInputArea.slideToggle()
+    $textInputArea.slideToggle();
 
-    if (warningDisplayLimit.is(':visible')){
+    if (warningDisplayLimit.is(':visible')) {
       warningDisplayLimit.slideToggle();
     }
-    if (warningDisplayZero.is(':visible')){
+    if (warningDisplayZero.is(':visible')) {
       warningDisplayZero.slideToggle();
     }
 
-  })
+  });
 
 });
