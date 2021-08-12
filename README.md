@@ -6,9 +6,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Layouts
 
-!["Small Version (under 1024x600px)"]()
+!["Small Version (under 1024x600px)"](https://github.com/KangerDrew/tweeter/blob/master/docs/smallDisplay.png)
 
-!["Enlarged Version (above 1024x600px)"]()
+!["Enlarged Version (above 1024x600px)"](https://github.com/KangerDrew/tweeter/blob/master/docs/largeDisplay.png)
 
 
 ## Getting Started
