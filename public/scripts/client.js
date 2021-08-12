@@ -28,7 +28,7 @@ $(document).ready(function() {
               </td>
             </tr>
           </table>
-            <span>${userData.user.handle}</span>
+            <span class="user-handle">${userData.user.handle}</span>
         </div>
         <p class="tweet-content">${escape(userData.content.text)}</p>
         <div class="tweet-foot">

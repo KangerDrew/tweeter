@@ -2,9 +2,6 @@ main.container h2{
   margin-top:15px;
 }
 
-section.new-tweet{
-  display:none;
-}
 
 form.tweet-input textarea{
   border: none;
@@ -14,6 +11,10 @@ form.tweet-input textarea{
   border-bottom:solid 5px #545149;
   margin-bottom:5px;
   resize:none;
+}
+
+.user-handle{
+  color:#95a1ca;
 }
 
 div.below-input {
@@ -32,8 +33,21 @@ div.below-input button {
   cursor:pointer;
   color:#FFFFFF;
   border: none;
+  transition:0.5s;
+}
+
+div.below-input button:hover {
+  padding: 1px 7px;
+  background-color: skyblue;
 }
 
 .counter-overflow {
   color:red
 }
+
+
+
+
+
+
+

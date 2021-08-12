@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="/styles/tweet-container.css" type="text/css" />
     <link rel="stylesheet" href="/styles/warning.css" type="text/css" />
     <link rel="stylesheet" href="/styles/scroll-up-button.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/responsive-design.css" type="text/css" />
+
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -45,19 +47,19 @@
           <h2>New Phone Who Dis</h2>
       </div>
     </header>
-    <!-- The element below will only display if the character input exceeds 140 -->
-    <div class="flex-center">
-      <div id="limit-warning">
-        <i class="fas fa-radiation-alt"></i><a> You have exceeded the character limit! </a><i class="fas fa-radiation-alt"></i>
-      </div>
-    </div>
-    <div class="flex-center">
-      <div id="zero-word">
-        <i class="fas fa-radiation-alt"></i><a> Please input something into the textbox! </a><i class="fas fa-radiation-alt"></i>
-      </div>
-    </div>
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <!-- The element below will only display if the character input exceeds 140 -->
+      <div class="flex-center">
+        <div id="limit-warning">
+          <i class="fas fa-radiation-alt"></i><a> You have exceeded the character limit! </a><i class="fas fa-radiation-alt"></i>
+        </div>
+      </div>
+      <div class="flex-center">
+        <div id="zero-word">
+          <i class="fas fa-radiation-alt"></i><a> Please input something into the textbox! </a><i class="fas fa-radiation-alt"></i>
+        </div>
+      </div>
       <section class="new-tweet" method="POST" action='/tweets'>
         <h2>Compose Tweet</h2>
         <form id="tweet-submission" class="tweet-input" >

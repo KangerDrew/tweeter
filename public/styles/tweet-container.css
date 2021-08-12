@@ -3,6 +3,7 @@
   border:solid 5px #545149;
   height: fit-content;
   align-items:center;
+  transition:0.5s;
 }
 
 .stored-tweet div.tweet-head {
