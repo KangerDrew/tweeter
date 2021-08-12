@@ -21,6 +21,7 @@ div.below-input output {
 
 div.below-input button {
   background-color: #4056A1;
+  cursor:pointer;
   color:#FFFFFF;
   border: none;
 }

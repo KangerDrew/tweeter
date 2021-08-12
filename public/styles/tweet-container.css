@@ -35,6 +35,7 @@
 
 .stored-tweet .tweet-foot-buttons span {
   color:#4056A1;
+  cursor:pointer;
   transition:0.5s;
 }
 

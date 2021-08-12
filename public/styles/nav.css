@@ -24,6 +24,22 @@ nav span {
   align-items:center;
 }
 
-.arrow-down {
-  color:goldenrod;
+@keyframes arrow{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
+
+.arrow-down {
+  margin-top:10px;
+  color:goldenrod;
+  cursor:pointer;
+  animation-name:arrow;
+  animation-duration:1s;
+  animation-direction: linear;
+  animation-iteration-count: infinite;
+}
+

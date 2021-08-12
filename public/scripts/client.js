@@ -6,6 +6,13 @@
 
 $(document).ready(function() {
 
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+  
+
   const createTweetElement = function(userData) {
 
     const $returnTweet = $(
@@ -23,7 +30,7 @@ $(document).ready(function() {
           </table>
             <span>${userData.user.handle}</span>
         </div>
-        <p class="tweet-content">${userData.content.text}</p>
+        <p class="tweet-content">${escape(userData.content.text)}</p>
         <div class="tweet-foot">
           <h6>${timeago.format(userData.created_at)}</h6>
           <div class="tweet-foot-buttons">
@@ -44,7 +51,14 @@ $(document).ready(function() {
     return $returnTweet;
   };
 
-  const renderTweet = function(tweets) {
+  const renderTweets = function(tweets) {
+    // empty out any existing tweets from
+    // the container!
+    $('#tweet-container').empty();
+
+    // reverse the order of the tweets...
+
+    tweets = tweets.reverse();
     
     for (const aTweetData of tweets) {
       let $newTweet = createTweetElement(aTweetData);
@@ -52,31 +66,38 @@ $(document).ready(function() {
     }
   };
 
-  const data = [
-    {
-      "user": {
-        "name": "John Wick",
-        "avatars": "/images/keanu.png"
-        ,
-        "handle": "@leggo-my-doggo"
-      },
-      "content": {
-        "text": "Woah"
-      },
-      "created_at": 1461116232227
-    },
-    {
-      "user": {
-        "name": "Nicholas Cage",
-        "avatars": "/images/nic-cage.png",
-        "handle": "@not-the-bees" },
-      "content": {
-        "text": "ImAVampireImAVampireImAVampireImAVampireImAVampireImAVampireImAVampire!"
-      },
-      "created_at": 1461113959088
-    }
-  ]
 
-  renderTweet(data);
+  const loadTweets = () => {
+    $.ajax({
+      url: '/tweets',
+      method: 'GET',
+      success: (storedTweets) => {
+        renderTweets(storedTweets);
+      },
+      error: (err) => {
+        console.log(err);
+      }
+    });
+  };
+
+  loadTweets();
+  
+
+  $("#tweet-submission").on("submit", function(event) {
+    event.preventDefault();
+
+    const $tweetInput = $('#tweet-text');
+    const textLength = $tweetInput.val().length;
+
+    if (textLength > 140 || textLength < 0 || $tweetInput.val() === ''){
+      alert('Nope')
+    } else {
+      const urlEncoded = $(this).serialize();
+      $.post('/tweets',urlEncoded)
+        .then(loadTweets);
+    }
+
+
+  });
 
 });

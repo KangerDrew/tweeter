@@ -45,9 +45,9 @@
     </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
+      <section class="new-tweet" method="POST" action='/tweets'>
         <h2>Compose Tweet</h2>
-        <form class="tweet-input" method="POST" action='/tweets'>
+        <form id="tweet-submission" class="tweet-input" >
           <!-- <label for="tweet-text"></label> -->
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div class='below-input'>
