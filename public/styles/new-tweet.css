@@ -2,9 +2,9 @@ main.container h2{
   margin-top:15px;
 }
 
-/* section.new-tweet{
+section.new-tweet{
   display:none;
-} */
+}
 
 form.tweet-input textarea{
   border: none;

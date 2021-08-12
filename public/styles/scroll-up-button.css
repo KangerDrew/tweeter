@@ -1,0 +1,43 @@
+main.container div.scroll-up-button{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor:pointer;
+  
+  color:white;
+  background-color:forestgreen;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+
+  bottom: 5vw;
+  right: 5vw;
+  position:fixed;
+
+
+  animation-name:spinny;
+  animation-duration:1.5s;
+  animation-direction: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spinny{
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(-45deg);
+  }
+  85% {
+    transform: rotate(405deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+main.container div.scroll-up-button.hide-button{
+  display:none;
+}

@@ -24,20 +24,7 @@ nav span {
   align-items:center;
 }
 
-/* @keyframes spinny{
-  0% {
-    transform: rotate(0deg);
-  }
-  15% {
-    transform: rotate(-45deg);
-  }
-  85% {
-    transform: rotate(405deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-} */
+
 
 @keyframes arrow{
   0% {

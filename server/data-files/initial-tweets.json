@@ -6,9 +6,9 @@
       "handle": "@leggo-my-doggo"
     },
     "content": {
-      "text": "Woah"
+      "text": "What do I think happen when we die? I know that the ones who love us will miss us."
     },
-    "created_at": 1628382721361
+    "created_at": 1628480401256
   },
   {
     "user": {
@@ -19,28 +19,17 @@
     "content": {
       "text": "ImAVampireImAVampireImAVampireImAVampireImAVampireImAVampireImAVampire!"
     },
-    "created_at": 1628469121361
+    "created_at": 1628566801256
   },
   {
     "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png",
-      "handle": "@SirIsaac"
+      "name": "Michael Jordan",
+      "avatars": "/images/jordan.png",
+      "handle": "@black-jesus"
     },
     "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
+      "text": "And I took it personally."
     },
-    "created_at": 1628555521361
-  },
-  {
-    "user": {
-      "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd"
-    },
-    "content": {
-      "text": "Je pense , donc je suis"
-    },
-    "created_at": 1628641921361
+    "created_at": 1628653201256
   }
 ]
